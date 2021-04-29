@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome from about html page</h1>
+
+<h2>my text = {{ my_text|capfirst|upper  }}</h2>
+<p>my title = {{title}}</p>
+<p>my number = {{number}}</p>
+<p>my list = {{list}}</p>
+{{ html|safe }}
+
+
+<ul>
+    {% for item in list %}
+        {% if item == 1 %}
+        <li>
+            {{ "cool : " }} {{ forloop.counter}} - {{item}} => {{ item|add:200 }} 
+        </li>
+        {% else %}
+        <li>
+            {{ "ordinal : " }} {{forloop.counter}} - {{item}}
+        </li>
+        {% endif %}
+        
+    {% endfor %}   
+</ul>
+
+
+
+{% endblock %}
+

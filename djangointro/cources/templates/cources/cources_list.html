@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{%  block content %}
+
+{{ objs_list }}
+
+{% for item in object %}
+
+    <h1>
+        {{ item.id}} - {{ item.title }}
+    </h1>
+
+{% endfor %}
+
+{% endblock %}

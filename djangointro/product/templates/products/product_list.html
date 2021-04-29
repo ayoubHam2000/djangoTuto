@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{%  block content %}
+
+{{ objs_list }}
+
+{% for item in objs %}
+
+    <h1>
+        {{ item.id }} - 
+        <a href = '{{ item.get_url }}' >
+            {{ item.title }} 
+        </a> 
+    </h1>
+
+{% endfor %}
+
+{% endblock %}

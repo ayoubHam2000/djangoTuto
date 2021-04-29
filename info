@@ -1,0 +1,16 @@
+django-admin startproject projectName
+py manage.py runserver
+py manage.py migrate
+py manage.py migrate --run-syncdb
+py manage.py createsuperuser
+py manage.py startapp appName
+py manage.py makemigrations
+py manage.py dbshell
+
+
+built in templates
+filters
+
+
+#functions
+dir => grup all object functions  names

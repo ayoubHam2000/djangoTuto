@@ -1,0 +1,22 @@
+{%  extends 'base.html' %}
+
+{% block title %} 
+
+Home 
+
+{% endblock %}
+
+
+{% block content %}
+
+    {% for i in docs %}
+
+        {% if 1 == 1 %}
+            <p>dfsd</p>
+        {% endif %}
+
+        <p> {{ i.nom }} </p>
+
+    {% endfor %}
+
+{% endblock %}

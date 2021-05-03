@@ -7,6 +7,7 @@ py manage.py startapp appName
 py manage.py makemigrations
 py manage.py dbshell
 
+py -m pip install django-crispy-forms
 
 built in templates
 filters
@@ -14,3 +15,16 @@ filters
 
 #functions
 dir => grup all object functions  names
+
+
+#=====================================
+t = TodoList(name = "Time")
+t.save()
+TodoList.objects.all()
+TodoList.objects.get(id = 1).name
+
+t.item_set.all()
+t.item_set.create(text = "new item in todo list", complete = False)
+
+//https://www.youtube.com/watch?v=sm1mokevMWk
+//https://www.youtube.com/watch?v=F5mRW0jo-U4

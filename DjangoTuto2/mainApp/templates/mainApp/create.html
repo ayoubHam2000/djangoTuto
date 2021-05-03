@@ -1,0 +1,23 @@
+{% extends 'mainApp/base.html' %}
+
+{% block title %}
+Create
+{% endblock %}
+
+{% block content  %}
+    
+    <h3>Create page</h3>
+
+    <form method="post" accept="/create/" class = "form-group" >
+        {% csrf_token %}
+        <div class = "input-group mb-3" >
+            <div class = "input-group-prepend" >
+                <input type="submit", value="Create new list", name = 'create' class = "btn btn-success">
+            </div>
+            {{ form.name }}
+        </div>
+        
+       
+    </form>
+
+{% endblock %}
